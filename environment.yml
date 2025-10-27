@@ -1,0 +1,73 @@
+# Copyright (c) 2022-2025, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+name: isaacenv
+
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.11
+  - pip
+  - importlib_metadata
+  
+  # Build tools
+  - cmake
+  - make
+  - gcc
+  - gxx
+  
+  # Scientific computing
+  - numpy<2
+  - scipy
+  
+  # PyTorch (CUDA 12.8 support)
+  - pytorch>=2.7
+  - pytorch-cuda=12.8
+  - torchvision
+  - torchaudio
+  
+  # Additional dependencies
+  - toml
+  - pyyaml
+  
+  # Pip dependencies (installed via pip after conda environment creation)
+  - pip:
+      # Isaac Lab core dependencies
+      - onnx>=1.18.0
+      - prettytable==3.3.0
+      - hidapi==0.14.0.post2
+      - gymnasium==1.2.1
+      - trimesh
+      - pyglet<2
+      - transformers
+      - einops
+      - warp-lang
+      - pillow==11.2.1
+      - starlette==0.45.3
+      - pytest
+      - pytest-mock
+      - junitparser
+      - flatdict==4.0.1
+      - flaky
+      
+      # Linux x86_64 specific
+      - pin-pink==3.1.0
+      - dex-retargeting==0.4.6
+      
+      # Piper SDK dependencies
+      - python-can>=3.3.4
+      
+      # Install Isaac Lab packages (after cloning repo, these will be installed via setup script)
+      # -e ./source/isaaclab
+      # -e ./source/isaaclab_assets
+      # -e ./source/isaaclab_tasks
+      # -e ./source/isaaclab_rl
+      # -e ./source/isaaclab_mimic
+      # -e ./piper_sdk

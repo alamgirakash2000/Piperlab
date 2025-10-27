@@ -1,0 +1,138 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+isaacenv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Isaac Sim
+_isaac_sim/
+.isaac/
+*.log
+*.pkl
+*.pth
+*.pt
+
+# Logs and caches
+logs/
+*.log
+log/
+*.cache
+
+# Build artifacts
+*.o
+*.a
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Robot data and temporary files
+*.bag
+*.csv
+*.tmp
+tmp/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Environment files (comment out if you want to share environment configs)
+# environment.yml
+# .env
+
+# Large assets and data
+data/
+datasets/
+*.usd.bak
+*.usda.bak
+*.usdc.bak
+
+# Conda/pip
+conda-meta/
+.conda/
+
+# Results and outputs
+outputs/
+results/
+runs/
+checkpoints/
+wandb/
+tensorboard/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# CAN interface temporary files
+/piper_sdk/rm_tmp.sh
+
+# Piper SDK build artifacts
+piper_sdk/build/
+piper_sdk/piper_sdk.egg-info/
+piper_sdk/dist/
+
+# Isaac Lab source builds
+source/*/build/
+source/*/*.egg-info/
+source/*/dist/
+
