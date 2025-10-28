@@ -43,13 +43,13 @@ conda activate isaacenv
 
 ```bash
 # 1. Activate CAN interface (run once after boot/USB reconnect)
-sudo bash piper_sdk/scripts/1_setup_can.sh
+sudo bash piper_sdk/scripts/setup_can.sh
 
 # 2. Test connection - safe, reads sensor data only
 python3 piper_sdk/scripts/test_robot.py
 
 # 3. Execute demo movements - robot will physically move ⚠️
-python3 piper_sdk/scripts/3_move_robot.py
+python3 piper_sdk/scripts/move_robot.py
 
 # Alternative: Use GUI for interactive control
 bash piper_sdk/gui/launch_gui.sh
