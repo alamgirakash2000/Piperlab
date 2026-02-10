@@ -1,0 +1,45 @@
+{
+    "cameras": [
+        {
+            "name": "wrist",
+            "device_index": 0,
+            "width": 640,
+            "height": 360,
+            "fps": 30
+        },
+        {
+            "name": "global",
+            "device_index": 2,
+            "width": 640,
+            "height": 360,
+            "fps": 30
+        }
+    ],
+    "robot": {
+        "can_interface": "can0",
+        "num_joints": 6,
+        "gripper_min": 0.0,
+        "gripper_max": 100.0,
+        "home_position": [
+            0.04,
+            0.38,
+            0.11,
+            3.98,
+            -18.01,
+            2.29
+        ],
+        "home_gripper": 50.0,
+        "motion_speed": 30
+    },
+    "recording": {
+        "fps": 30,
+        "video_codec": "mp4v",
+        "video_quality": 23
+    },
+    "dataset": {
+        "base_path": "datasets",
+        "default_task": "pick the white cup and place it on the red cup",
+        "max_demos": 50,
+        "lerobot_version": "2.1"
+    }
+}

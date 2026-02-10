@@ -1,0 +1,14 @@
+{
+  "name": "pick_the_white_cup_and_place_it_on_the_red_cup",
+  "version": "2.1",
+  "task": "pick the white cup and place it on the red cup",
+  "robot_type": "agilex_piper",
+  "fps": 30,
+  "num_episodes": 10,
+  "total_frames": 5236,
+  "camera_names": [
+    "wrist",
+    "global"
+  ],
+  "created_at": "2026-02-09T20:28:27Z"
+}

@@ -1,0 +1,108 @@
+{
+    "state_keys": [
+        "observation.state"
+    ],
+    "action_keys": [
+        "action"
+    ],
+    "observation.state": {
+        "type": "proprioceptive",
+        "dim": 7,
+        "modalities": [
+            {
+                "name": "joint_positions",
+                "shape": [
+                    6
+                ],
+                "units": "degrees"
+            },
+            {
+                "name": "gripper_position",
+                "shape": [
+                    1
+                ],
+                "units": "percentage"
+            }
+        ],
+        "normalization": {
+            "min": [
+                -180,
+                -180,
+                -180,
+                -180,
+                -180,
+                -180,
+                0
+            ],
+            "max": [
+                180,
+                180,
+                180,
+                180,
+                180,
+                180,
+                100
+            ]
+        }
+    },
+    "action": {
+        "type": "proprioceptive",
+        "dim": 7,
+        "modalities": [
+            {
+                "name": "joint_position_delta",
+                "shape": [
+                    6
+                ],
+                "units": "degrees"
+            },
+            {
+                "name": "gripper_action",
+                "shape": [
+                    1
+                ],
+                "units": "percentage"
+            }
+        ],
+        "normalization": {
+            "min": [
+                -10,
+                -10,
+                -10,
+                -10,
+                -10,
+                -10,
+                -50
+            ],
+            "max": [
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                50
+            ]
+        }
+    },
+    "observation.images.global": {
+        "type": "visual",
+        "modality": "rgb",
+        "shape": [
+            360,
+            640,
+            3
+        ],
+        "encoding": "mp4"
+    },
+    "observation.images.wrist": {
+        "type": "visual",
+        "modality": "rgb",
+        "shape": [
+            360,
+            640,
+            3
+        ],
+        "encoding": "mp4"
+    }
+}

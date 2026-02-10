@@ -1,0 +1,28 @@
+{
+  "observation.state": {
+    "type": "proprioceptive",
+    "modalities": [
+      {"name": "joint_positions", "shape": [6], "units": "degrees"},
+      {"name": "gripper_position", "shape": [1], "units": "percentage", "range": [0, 100]}
+    ]
+  },
+  "action": {
+    "type": "proprioceptive",
+    "modalities": [
+      {"name": "joint_position_delta", "shape": [6], "units": "degrees"},
+      {"name": "gripper_action", "shape": [1], "units": "percentage"}
+    ]
+  },
+  "observation.images.global": {
+    "type": "visual",
+    "modality": "rgb",
+    "shape": [360, 640, 3],
+    "encoding": "mp4"
+  },
+  "observation.images.wrist": {
+    "type": "visual",
+    "modality": "rgb", 
+    "shape": [360, 640, 3],
+    "encoding": "mp4"
+  }
+}
